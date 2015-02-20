@@ -49,7 +49,8 @@ todoApp.controller('TodoCtrl', function TodoCtrl($scope, adapter) {
         // Send request to the Platform and in case of success add Todo to the List
         todoStorage.create({
             title: title,
-            completed: false
+            completed: false,
+            createdAt: Date.now()
         }).then(angular.bind(null, handler, 'create'));
 
         this.title = '';

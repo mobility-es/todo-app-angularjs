@@ -18,7 +18,7 @@
         </header>
         <section ng-show="todos.length">
             <ul class="todos">
-                <li ng-repeat="todo in todos track by getId(todo)" ng-class="{completed: todo.completed}" ng-click="toggleComplete(todo)">{{todo.title}}</li>
+                <li ng-repeat="todo in todos track by getId(todo) | orderBy:createdAt" ng-class="{completed: todo.completed}" ng-click="toggleComplete(todo)">{{todo.title}}</li>
             </ul>
         </section>
         <footer info-pane></footer>

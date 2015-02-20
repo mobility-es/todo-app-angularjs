@@ -1,13 +1,16 @@
 {
     "documents": [{
         "_type": "todo.model.TODO",
-        "title": "Empty the trash"
+        "title": "Empty the trash",
+        "createdAt": 1414323290239
     }, {
         "_type": "todo.model.TODO",
         "title": "Integrate with AIQ",
-        "completed": true
+        "completed": true,
+        "createdAt": 1424323290239
     }, {
         "_type": "todo.model.TODO",
-        "title": "Walk the cat"
+        "title": "Walk the cat",
+        "createdAt": 1424423290239
     }]
 }
